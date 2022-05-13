@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		.main__container{
+			text-align: center;
+		}
+		.currently{
+			margin-bottom: 40px;
+		}
+		.currently__picture{
+			color: rgb(57, 57, 243);
+			font-size: 34px;
+		}
+		.currently__title{
+			color: rgb(57, 57, 243);
+			font-size: 36px;
+		}
+		.currently__degrees{
+			font-size: 36px;
+		}
+		span{
+			font-weight: bold;
+		}
+		h4{
+			font-size: 24px;
+			margin-bottom: 0px;
+		}
+		.tomorrow__degrees{
+			font-size: 18px;
+		}
+		.saturday__degrees{
+			font-size: 18px;
+		}
+		.sunday__degrees{
+			font-size: 18px;
+		}
+		.tomorrow, .saturday, .sunday{
+			margin: 0 auto;
+			max-width: 400px;
+			min-height: 90px;
+			padding: 0.5%;
+			transition: 0.1s ease 0.3s;
+		}
+		.tomorrow:hover, .saturday:hover, .sunday:hover{
+			background-color: rgb(244, 235, 223);
+			border-radius: 10px;
+			
+		}
+		.sunday{
+			margin-bottom: 20px;
+		}
+		.button{
+			display: block;
+			font-size: 18px;
+			max-width: 140px;
+			min-height: 60px;
+			border: 1px solid rgb(57, 57, 243);
+			background-color: rgb(57, 57, 243);
+			border-radius: 30px;
+			color: aliceblue;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			text-align: center;
+			line-height: 300%;
+			transition: 0.1s ease 0.1s;
+			box-shadow: 0px 10px 10px gainsboro;
+			text-decoration: none;
+		}
+		.button:hover{
+			background-color: rgb(239, 239, 253);
+			border: 1px solid rgb(57, 57, 243);
+			color: rgb(57, 57, 243);
+			cursor: pointer;
+			
+		}
+		.name{
+			font-size: 24px;
+			color: gray;
+		}
+	</style>
+	<div class="main">
+		<div class="main__container">
+			<div class="currently">
+				<div class="currently__picture">🌤</div>
+				<h1 class="currently__title">Currently 21° in Tokyo</h1>
+				<p class="currently__degrees">13° / <span>23°</span></p>
+			</div>
+			<div class="tomorrow">
+				<h4 class="tomorrow__title">🌧Tomorrow</h4>
+				<p class="tomorrow__degrees">10° / <span>22°</span></p>
+			</div>
+			<div class="saturday">
+				<h4 class="saturday__title">🌥 Saturday</h4>
+				<p class="saturday__degrees">15° / <span>17°</span></p>
+			</div>
+			<div class=" sunday">
+				<h4 class="sunday__title">☀️ Sunday</h4>
+				<p class="sunday__degrees">25° / <span>28°</span></p>
+			</div>
+			<div class="button-box">
+				<a class="button" href="#">Change city</a>
+			</div>
+			<p class="name">Coded by Anna Petrovska</p>
+		</div>
+	</div>
+</body>
+</html>
